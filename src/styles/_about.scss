@@ -1,0 +1,38 @@
+.about {
+  padding-top: 6rem;
+
+  &__card {
+    display: flex;
+    gap: 2rem;
+  
+    padding: 1rem;
+  
+    background-color: var(--gray-700);
+    border: 2px solid var(--gray-700);
+    border-radius: 8px;
+
+    position: relative;
+
+    transition: 0.5s;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+
+    &:hover {
+      border: 2px solid var(--green-700);
+
+      .title {
+        color: var(--green-700);
+      }
+    }
+  }
+
+  &__image {
+    width: 40%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}

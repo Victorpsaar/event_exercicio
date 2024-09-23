@@ -1,0 +1,58 @@
+.footer {
+  padding: 2rem 0;
+
+  background-color: var(--gray-900);
+
+  .container {
+    display: flex;
+    gap: 1rem; 
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__card {
+    width: 100%;
+
+    background-color: var(--gray-700);
+    border-radius: 8px;
+    border: 2px solid var(--gray-700);
+
+    padding: 1rem;
+
+    text-align: center;
+
+    transition: 0.5s;
+
+    @media (max-width: 768px) {
+      margin-bottom: 2rem;
+    }
+
+    &:hover {
+      border: 2px solid var(--green-700);
+
+      .sub-title {
+        color: var(--green-700);
+      }
+    }
+
+    .description {
+      font-size: 0.875rem;
+    }
+
+    &__list {
+      &__link {
+        display: inline-block;
+        margin-right: 0.5rem;
+
+        &__item {
+          text-decoration: none;
+          font-size: 1.5rem;
+
+          color: var(--green-700);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.attractions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+
+  padding: 6rem 0;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+
+  &__card {
+    background-color: var(--gray-700);
+    border-radius: 8px;
+    border: 2px solid var(--gray-700);
+
+    padding: 1rem;
+    transition: 0.5s;
+
+    @media (max-width: 768px) {
+      margin-bottom: 2rem;
+    }
+
+    &:hover {
+      border: 2px solid var(--green-700);
+
+      .title {
+        color: var(--green-700);
+      }
+    }
+
+    &__image {
+      width: 100%;
+    }
+  }
+}
