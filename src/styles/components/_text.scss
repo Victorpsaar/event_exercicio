@@ -1,0 +1,28 @@
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+
+  margin: 1rem 0;
+
+  transition: 0.5s;
+}
+
+.sub-title {
+  display: block;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  color: var(--gray-100);
+
+  transition: 0.5s;
+}
+
+.description {
+  color: var(--gray-300);
+  line-height: 1.4;
+
+  margin: 1rem 0;
+
+  transition: 0.5s;
+}
