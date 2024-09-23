@@ -1,5 +1,8 @@
 {
+  "jpeg": {
+    "quality": 100
+  },
   "png": {
-    "quality": 70
+    "quality": 100
   }
 }
